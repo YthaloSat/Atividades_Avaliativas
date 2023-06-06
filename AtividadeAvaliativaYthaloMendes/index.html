@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade Avaliativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <script>
+        alert("Boas Vindas Professor!!!");
+        function naoClique()
+        {
+            alert("Eu disse NÂO!");
+        }
+    </script>
+</head>
+<body>
+    <div class="barra">
+        <h1>Perfil do Aluno</h1>
+    </div>
+    <div class="container">
+        <div class="sessaoAluno">
+            <div class="box-dados">
+                <div class="alunoFoto">
+                    <img id="imagem" src="img/aluno.jpg">
+                </div>
+                <div class="alunoDados">
+                    <p id="nome">Nome: Luffy</p>
+                    <p>Idade: 18</p> 
+                    <p>Sexo: Masculino</p> 
+                    <p>Cidade: Bom Jesus</p> 
+                    <p>Estado: PI</p> 
+                    <p>Escola: Colégio Técnico de Bom Jesus</p> 
+                </div>
+                <div class="btn">
+                    <form action="#" style="clear: both;">
+                        <label for="cor">Mudar Cor</label>
+                        <input type="color" id="cor">
+                    </form>
+                    <br>
+                    <button onclick="naoClique()">Nao Clique</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
