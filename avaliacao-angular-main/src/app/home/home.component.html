@@ -1,0 +1,36 @@
+<button mat-stroked-button color="accent" routerLink="/dashboard">
+  Dashboard
+</button>
+
+<button mat-stroked-button color="accent" routerLink="/formulario">
+  Formulario
+</button>
+
+<br><br><br>
+
+<div>
+    <div>
+        <h2>Saldo: {{saldoAtual}}</h2>
+    </div>
+    <section></section>
+</div>
+
+<form>
+    <div class="row">
+        <div class="col">
+          <mat-form-field floatLabel="always">
+            <mat-label>Valor</mat-label>
+            <input matInput type="number" class="example-right-align" placeholder="0" id="valor">
+            <span matTextPrefix>$&nbsp;</span>
+            <span matTextSuffix>.00</span>
+          </mat-form-field>
+        </div>
+      </div>
+</form>
+
+<button mat-stroked-button color="accent" id="depositar" (click)="depositar()">
+    Depositar
+</button>
+<button mat-stroked-button color="accent" id="sacar" (click)="sacar()">
+    Sacar
+</button>
